@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="strings-translate",
-    version="1.0.0",
+    version="1.0.1",
     author="Matyáš Boháček",
     author_email="matyas.bohacek@matsworld.io",
     description="A package for automatic translation of .strings files using the Google Translate API",
