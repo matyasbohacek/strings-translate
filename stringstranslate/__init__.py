@@ -1,0 +1,1 @@
+from stringstranslate.strings_translator import StringsTranslator
