@@ -5,6 +5,8 @@ from googletrans import Translator
 from collections import Counter
 from iso_language_codes import language_dictionary
 
+from stringstranslate.exceptions import EXCEPTION_LANGUAGE_CODES
+
 
 class StringsTranslator:
     """
@@ -24,7 +26,7 @@ class StringsTranslator:
         """
 
         # Prevent invalid language parameter
-        if target_lang not in language_dictionary().keys():
+        if target_lang not in language_dictionary().keys() and target_lang not in EXCEPTION_LANGUAGE_CODES:
             raise ValueError("The target language is not valid.")
 
         # Prevent invalid file parameter
@@ -63,7 +65,7 @@ class StringsTranslator:
         """
 
         # Prevent invalid language parameter
-        if target_lang not in language_dictionary().keys():
+        if target_lang not in language_dictionary().keys() and target_lang not in EXCEPTION_LANGUAGE_CODES:
             raise ValueError("The target language is not valid.")
 
         # Prevent invalid file parameter
