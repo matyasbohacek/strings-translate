@@ -1,0 +1,2 @@
+
+EXCEPTION_LANGUAGE_CODES = ["zh-CN"]
